@@ -18,13 +18,14 @@ margin-top:50px;
 margin-bottom:20px;
 border:1px solid black;
 padding:5px;
+float:left;
 }
 
 .holder{
 padding:5px;
 margin-left:10px;
 float:left;
-width:600px;
+width:545px;
 }
 .content{
 margin-top:10px;
@@ -81,10 +82,36 @@ clear:both;
 list-style:none;
 }
 .currentRank{
-margin-left:-50px;
 }
 .currentRank1{
-margin-left:-40px;
 
+
+}
+
+.rankHolder{
+font-weight:bold;
+background-repeat:no-repeat;
+background-position:left center;
+height:55px;
+
+}
+.up{
+background-image:url('images/up.png');
+
+}
+
+.down{
+background-image:url('images/down.png');
+
+
+}
+.unchanged{
+background-image:url('images/unchanged.png');
+
+}
+.liLeft{
+width:55px;
+float:left;
+font-weight:bold;
 }
 

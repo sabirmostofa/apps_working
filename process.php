@@ -72,9 +72,7 @@ while($array=mysql_fetch_assoc($result)):
 			$current_rank = $rank_array[0];
 			$rank_array1 = explode(',',$last_rank1);
 			$rank_diff=$rank_array1[0]-$rank_array[0];
-				 if($rank_diff>0):			 
-				 $rank_diff = '+' . $rank_diff;
-				 endif;
+				
 			else:
 			$rank_array = explode(',',$value);
 			$current_rank = $rank_array[0];
