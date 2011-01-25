@@ -5,7 +5,7 @@ padding:0;
 }
 
 #ajax_return{
-width:800px;
+width:850px;
 margin:0 auto;
 }
 
@@ -22,7 +22,9 @@ padding:5px;
 
 .holder{
 padding:5px;
-margin-left:120px;
+margin-left:10px;
+float:left;
+width:600px;
 }
 .content{
 margin-top:10px;
@@ -51,6 +53,7 @@ position:absolute;
 left:300px;
 top:200px;
 z-index:100;
+opacity:0.3;
 }
 
 .read-more{
@@ -65,5 +68,23 @@ text-decoration:underline;
 }
 .more:hover{
 cursor:pointer;
+}
+.imageHolder{
+float:left;
+}
+
+.imageHolder img{
+clear:both;
+}
+
+#ajax-content{
+list-style:none;
+}
+.currentRank{
+margin-left:-50px;
+}
+.currentRank1{
+margin-left:-40px;
+
 }
 

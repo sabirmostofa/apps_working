@@ -33,7 +33,7 @@ $num_rows=mysql_num_rows($result1);
 
 $maker = array('post_title','post_content','app_image','app_artist','app_price');
 ?>
-<ol id="ajax-content" class='<?php echo $num_rows?>'>
+<ul id="ajax-content" class='<?php echo $num_rows?>'>
 
 <?php
 while($array=mysql_fetch_assoc($result)):
@@ -55,12 +55,27 @@ while($array=mysql_fetch_assoc($result)):
 		if($key == 'ranks'):
 			if(preg_match('/;/',$value)):			
 			$test_array = explode(';',$value);
+			
+			$ranks='';
+			$ranks_array=$test_array;
+			$count=0;			
+			while($last_rank=array_pop($ranks_array)):
+			$rank_array = explode(',',$last_rank);
+			$rank=$rank_array[0];
+			$ranks=($ranks=='')?$rank:$ranks.','.$rank;	
+			if(++$count==9)break;		
+			endwhile;
+			
 			$last_rank=array_pop($test_array);
 			$last_rank1=array_pop($test_array);
 			$rank_array = explode(',',$last_rank);
+			$current_rank = $rank_array[0];
 			$rank_array1 = explode(',',$last_rank1);
 			$rank_diff=$rank_array1[0]-$rank_array[0];
-			 if($rank_diff>0)$rank_diff = '+' . $rank_diff;
+				 if($rank_diff>0):			 
+				 $rank_diff = '+' . $rank_diff;
+				 endif;
+			else:
 			$rank_array = explode(',',$value);
 			$current_rank = $rank_array[0];
 			$rank_diff=0;

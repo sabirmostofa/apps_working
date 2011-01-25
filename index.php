@@ -30,12 +30,8 @@ endwhile;
 <input type='button' name='form-submit' id= 'fsubmit' value='View the apps'/>
 <div class='clearBoth'></div>
 <div id='loadingDiv'><image  src='images/loading.gif'></image></div>
-
-<div class='pagination'>
-<?php for($i=1;$i<16;$i++):?>
-<input type='button' style='float:left;margin-left:5px;' class='paginator' value='<?php  echo $i; ?>'/>
-<?php endfor; ?>
-</div>
+<div id="counterInf"></div>
+<div class='pagination'></div>
 <div class='clearBoth'></div>
 
 
@@ -50,8 +46,5 @@ endwhile;
 ?>
 <div id='ajax_return'></div>
 <div class='pagination'>
-<?php for($i=1;$i<16;$i++):?>
-<input type='button' style='float:left;margin-left:5px;' class='paginator' value='<?php  echo $i; ?>'/>
-<?php endfor; ?>
 </div>
 
