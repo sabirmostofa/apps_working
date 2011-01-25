@@ -31,20 +31,12 @@ endwhile;
 <div class='clearBoth'></div>
 <div id='loadingDiv'><image  src='images/loading.gif'></image></div>
 <div id="counterInf"></div>
+<div class='clearBoth'></div>
 <div class='pagination'></div>
 <div class='clearBoth'></div>
 
-
-<?php
-
- 
-
-
-
-
-
-?>
 <div id='ajax_return'></div>
+<div class='clearBoth'></div>
 <div class='pagination'>
 </div>
 

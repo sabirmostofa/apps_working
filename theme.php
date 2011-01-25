@@ -19,7 +19,7 @@ echo '<br/>'.$rank_diff;
 
 <li class='round'>
 <div class='imageHolder'>
-<image  src="<?php echo $app_image; ?>"/>
+<image  src="<?php echo $app_image; ?>" width='100' height='100'/>
 </div>
 
 <div class='holder'>
@@ -32,9 +32,7 @@ echo '<br/>'.$rank_diff;
 <div class='read-more'><?php echo $read_more;?></div>
 </div>
 <div style='float:left'>
-<img src="image.php?ranks=<?php echo $ranks;?>"/>
+<img src="image.php?ranks=<?php echo $ranks;?>" width='100' height='100'/>
 </div>
-
-<div style="clear:both;"></div>
-
 </li>
+<div style="clear:both;"></div>
