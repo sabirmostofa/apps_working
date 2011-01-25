@@ -1,6 +1,6 @@
 <?php 
 //Database configuration
-define('DB_HOST','localhost');
+define('DB_HOST','');
 define('DB_USERNAME','');
 define('DB_PASS','');
 define('DB_NAME','');
