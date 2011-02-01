@@ -7,6 +7,7 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel='stylesheet' href="css/style.css"/>
 <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.autocomplete.js" type="text/javascript"></script>
 <script src="js/custom.js" type="text/javascript"></script>
 <link rel='stylesheet' href='style.css'/>
 </head>

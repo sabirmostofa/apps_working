@@ -74,8 +74,10 @@ while($array=mysql_fetch_assoc($result)):
 			$rank_diff=$rank_array1[0]-$rank_array[0];
 				
 			else:
+			$ranks='';
 			$rank_array = explode(',',$value);
 			$current_rank = $rank_array[0];
+			$ranks=$current_rank.',0,0';
 			$rank_diff=0;
 			endif;
 		endif;

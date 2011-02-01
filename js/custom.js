@@ -108,6 +108,12 @@ for(var i=1;i<page;i++){
         $('.pagination').fadeIn('slow');
         			
     });
-
+    
+    /*
+    $("#searchField").autocomplete("search.php", {
+		width: 260,
+		selectFirst: false
+	});
+*/
 
 	});

@@ -8,7 +8,7 @@ elseif($rank_diff<0): echo 'down';
 else: echo 'up';
 endif; ?>'>
 <?php 
-if($rank_diff==0)echo '=';
+if($rank_diff==0)echo '';
 else{
 $rank_diff=($rank_diff>0)?'+'.$rank_diff:$rank_diff;
 echo '<br/>'.$rank_diff;
@@ -20,6 +20,12 @@ echo '<br/>'.$rank_diff;
 <li class='round'>
 <div class='imageHolder'>
 <image  src="<?php echo $app_image; ?>" width='100' height='100'/>
+<br/>
+<b>
+<br/>
+<?php echo $app_price.'!';?>
+</b>
+
 </div>
 
 <div class='holder'>

@@ -37,6 +37,7 @@ imageline($image, 0, $i*9, 90, $i*9, $colorGrey);
 for ($i=0; $i<$counter-1; $i++){
 switch($i):
 case 0:
+if($graphValues[$i]!=0)
 imagestring($image,5,0,$graphValues[$i]*.3,$graphValues[$i],$colorBlue);
 imageline($image, $i*9, ($graphValues[$i])*.3, ($i+1)*9, ($graphValues[$i+1])*.3, $colorBlue);
 break;
